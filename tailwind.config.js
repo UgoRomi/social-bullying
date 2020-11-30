@@ -1,0 +1,19 @@
+module.exports = {
+  purge: ['./src/**/*.js', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape': {'raw': '(orientation: landscape)'},
+      }
+    },
+    fontFamily: {
+      sans: ['Fira Sans', 'sans-serif']
+    }
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}

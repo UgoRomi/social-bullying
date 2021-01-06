@@ -1,11 +1,13 @@
 import Header from "./components/Header/Header";
-import Chart1 from "./components/Chart1/Chart1";
+import CyberBullyingTypes from "./components/CyberBullyingTypes/CyberBullyingTypes";
+import CyberBullyingKnown from "./components/CyberBullyingKnown/CyberBullyingKnown";
 
 function App() {
 	return (
 		<>
 			<Header/>
-			<Chart1/>
+			<CyberBullyingKnown/>
+			<CyberBullyingTypes/>
 		</>
 	);
 }

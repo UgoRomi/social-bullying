@@ -5,3 +5,11 @@
 .flex-center-parent {
     @apply flex justify-center items-center
 }
+
+.chart-title {
+    @apply w-screen text-2xl md:text-4xl text-center font-medium mb-4
+}
+
+.chart-container {
+    @apply px-4 mb-3 grid grid-cols-1 gap-y-2 md:items-center md:grid-cols-2 md:gap-x-8 md:gap-y-0
+}

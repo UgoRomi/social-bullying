@@ -22,7 +22,7 @@ const TypesChart = () => {
 	];
 	return (
 		<>
-			<h3 className="chart-title">Quali tipi di cyberbullismo conosci?</h3>
+			<h3 className="chart-title mt-12">Quali tipi di cyberbullismo conosci?</h3>
 			<div className="chart-container">
 				<p className="text-gray-700">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id bibendum est, ac venenatis quam. Curabitur dui tortor, iaculis et venenatis ut,

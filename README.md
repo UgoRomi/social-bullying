@@ -1,5 +1,6 @@
 # Social Bullying
 
-### https://socialbullying.it
+### https://social-bullying.netlify.app/
 
-A website made in collaboration with students from Siena's university about cyberbullying, and the effect that this phenomenon has during this time of isolation
+A website made in collaboration with students from Siena's university to analyse how the cyberbullying issue is evolving during this period of lockdown and
+social isolation

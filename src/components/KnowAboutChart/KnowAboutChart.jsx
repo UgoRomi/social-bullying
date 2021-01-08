@@ -1,15 +1,17 @@
 import React from 'react';
-import {Pie, PieChart, ResponsiveContainer} from "recharts";
+import {Cell, Legend, Pie, PieChart, ResponsiveContainer} from "recharts";
+import {pieColors} from "../../colors";
+import {renderCustomizedLabel} from "../../utils";
 
-const CyberBullyingKnown = () => {
+const KnowAboutChart = () => {
 	const data = [
 		{
-			"name": "Group A",
-			"value": 400
+			"value": 99.1,
+			"name": "Sì"
 		},
 		{
-			"name": "Group B",
-			"value": 300
+			"value": 0.9,
+			"name": "No"
 		},
 	];
 
@@ -19,7 +21,10 @@ const CyberBullyingKnown = () => {
 			<div className="chart-container">
 				<ResponsiveContainer width="100%" height={400}>
 					<PieChart>
-						<Pie data={data} dataKey="value" nameKey="name" fill="#8884d8"/>
+						<Legend layout="horizontal" verticalAlign="top" align="center"/>
+						<Pie data={data} dataKey="value" nameKey="name" fill="#8884d8" label={renderCustomizedLabel}>{
+							data.map((entry, index) => <Cell fill={pieColors[index % pieColors.length]}/>)
+						}</Pie>
 					</PieChart>
 				</ResponsiveContainer>
 				<p className="text-gray-700">
@@ -34,4 +39,4 @@ const CyberBullyingKnown = () => {
 		</>);
 };
 
-export default CyberBullyingKnown;
+export default KnowAboutChart;

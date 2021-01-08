@@ -1,7 +1,8 @@
 import React from 'react';
 import {Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts";
+import {blueGreen} from "../../colors";
 
-const CyberBullyingTypes = () => {
+const TypesChart = () => {
 	const data = [
 		{
 			name: 'Data dropping', votes: 171,
@@ -41,11 +42,11 @@ const CyberBullyingTypes = () => {
 						<YAxis/>
 						<Tooltip/>
 						<Legend/>
-						<Bar dataKey="votes" fill="#EAAC8B"/>
+						<Bar dataKey="votes" fill={blueGreen}/>
 					</BarChart>
 				</ResponsiveContainer>
 			</div>
 		</>);
 };
 
-export default CyberBullyingTypes;
+export default TypesChart;

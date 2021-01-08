@@ -1,13 +1,15 @@
 import Header from "./components/Header/Header";
-import CyberBullyingTypes from "./components/CyberBullyingTypes/CyberBullyingTypes";
-import CyberBullyingKnown from "./components/CyberBullyingKnown/CyberBullyingKnown";
+import TypesChart from "./components/TypesChart/TypesChart";
+import KnowAboutChart from "./components/KnowAboutChart/KnowAboutChart";
+import DiscoveredChart from "./components/DiscoveredChart/DiscoveredChart";
 
 function App() {
 	return (
 		<>
 			<Header/>
-			<CyberBullyingKnown/>
-			<CyberBullyingTypes/>
+			<KnowAboutChart/>
+			<TypesChart/>
+			<DiscoveredChart/>
 		</>
 	);
 }

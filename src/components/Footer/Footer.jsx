@@ -6,7 +6,7 @@ const Footer = (props) => {
 	return (
 		<footer className="bg-purple-400 p-2 text-white h-10 flex items-center text-sm w-full">
 			<span aria-label="author">
-				Made By <a className="underline" href="https://ugorovomi.dev" target="_blank" rel="noreferrer">Ugo Romi</a> using <span
+				Made By <a className="underline" href="https://ugoromi.dev" target="_blank" rel="noreferrer">Ugo Romi</a> using <span
 				className="underline cursor-pointer" onClick={() => props.setDialogIsOpen(true)}>these libraries</span>
 			</span>
 			<span aria-label="socials" className="ml-auto flex">
